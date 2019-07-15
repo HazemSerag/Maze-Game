@@ -1,0 +1,195 @@
+body{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 3rem;
+}
+
+@font-face{
+    font-family: authorname;
+    src: url(../fonts/ElectroShackle.ttf);  
+}
+
+@font-face{
+    font-family: secondfont;
+    src: url(../fonts/Noble-Gas-lights.ttf);
+}
+h1{
+    font-family: authorname;
+    color: #f2f2f2;
+}
+h2{
+    color: #f2f2f2;
+    font-family: secondfont;
+}
+#map{
+    /* border:1px solid #f2f2f2; */
+    width:max-content;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+#map .rowMap{
+    width:max-content;
+    height:max-content;
+    display:flex;
+}
+#map .cellMap{
+    width:44px;
+    height:44px;
+}
+@media screen and (max-width: 450px){
+    #map .cellMap{
+        width:39px;
+        height:39px;
+    }   
+}
+@media screen and (max-width: 374px){
+    #map .cellMap{
+        width:32px;
+        height:32px;
+    }   
+}
+
+#time{
+    
+}
+#time h4{
+    color: #f2f2f2;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+#time #sec{
+    color: #f2f2f2; 
+    font-size: 2rem;  
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal; 
+}
+
+#score{
+    
+}
+#score h4{
+    color: #f2f2f2;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+#score #points{
+    color: #f7e041;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+#mov{
+
+}
+#mov h4{
+    color: #f2f2f2;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+#mov #move{
+    color: #f2f2f2;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* congratulation msg */
+#finnish{
+    color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+#finnish h2{
+    color: #f7e041;
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+#finnish p{
+    color: #f2f2f2;
+    font-size: 1.2rem;
+}
+#finnish #start{
+    color: #243B55;
+}
+#finnish #new{
+    background-color: #f7e041;
+    color: #243B55;
+}
+
+.username-box{
+    background: rgb(34, 54, 79);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+.bird-logo{
+    font-family: authorname;    
+    color: #f2f2f2;
+    font-size: 30px;
+}
+.bird-logo span{
+    color: #f7e041;    
+    font-family: authorname;
+    font-size: 30px;
+}
+.move-btns-box{
+    display: none;
+}
+@media screen and (max-width:768px){
+    .move-btns-box{
+        margin: 16px auto;
+        display: block;
+    }
+}
+.move-btns{
+    background: transparent;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.authors{
+    width: 210px;
+    min-width: 210px;
+    /* position: fixed; */
+    bottom: 40px;
+    left: 20px;
+}
+/* @media screen and (max-width: 768px){
+    .authors{
+        position: absolute;
+    }
+} */
+
+.authors h4{
+    color: white;
+    font-family: secondfont;
+}
+
+.authors h4 i{
+    color: #f7e041;
+    font-size: 30px;
+}
+
+.authors h3{
+    font-family: authorname;
+    color: #f2f2f2;
+    font-size: 22px;
+    color: #f7e041;
+}
+
+.authors h3 i{}
+
+.startbtn{
+    background: white;
+    color: #243B55;
+    font-family: secondfont;
+    font-size: 16px;
+    cursor: pointer;
+}
+.startbtn:hover{
+    color: #243B55;
+}
